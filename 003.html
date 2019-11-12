@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <textarea id="xbox"></textarea>
+    <textarea id="ybox"></textarea>
+    <input type="submit" value="Somar!" onclick="soma()">
+
+    <p id="result">Introduza dois números e clique no botão.</p>
+    <script>
+    
+        function soma() {
+            var x = Number.parseFloat(document.getElementById("xbox").value);
+            var y = Number.parseFloat(document.getElementById("ybox").value);
+            var p = document.getElementById("result");
+            p.innerHTML = `A soma de <strong>${x}</strong> e <strong>${y}</strong> é ${x+y}.`;
+        }
+        
+        
+    </script>
+</body>
+</html>
