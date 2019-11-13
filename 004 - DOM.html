@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DOM - Document Object Model</title>
+
+    <style>
+        body {
+            background: lightgray;
+            color: darkslategray;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>First steps with the DOM</h1>
+
+    <p>This is just a paragraph.</p>
+
+    <div id="msg">
+        Click here.
+    </div>
+
+
+
+    <script>
+        var p1 = document.getElementsByTagName("p")[0];
+        p1.style.color = 'red';
+
+        var m = document.getElementById('msg');
+        m.style.background = 'cyan';
+        m.innerHTML = "<p>New text</p>";
+
+        document.write("Charset: " + document.charset + "<br>")
+
+        document.write("URL: " + document.URL + "<br>")
+        document.write("documentURI: " + document.documentURI + "<br>")
+        document.write("baseURI: " + document.baseURI + "<br><br>")
+
+        document.write("appName: " + navigator.appName + "<br>")
+        document.write("appCodeName: " + navigator.appCodeName + "<br>")
+        document.write("appVersion: " + navigator.appVersion + "<br>")
+        
+    
+    </script>
+</body>
+</html>

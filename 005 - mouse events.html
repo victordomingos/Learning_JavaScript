@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hello</title>
+    <style>
+           #area {
+               background: lightgray;
+               color:green;
+               width: 150px;
+               height: 150px;
+               text-align:center;
+               vertical-align: middle;
+               display: table-cell;    
+           }
+
+           
+        </style>
+</head>
+<body>
+<div id="area" onclick="doStuff()" onMouseEnter="doEnter()" onmouseout="doExit()">
+    <p>Interaction area...</p>
+</div>
+
+
+
+
+<script>
+       
+    function doStuff() {
+        var a = document.getElementById("area")
+        a.innerText = "You have just clicked. It felt good enough."
+    }
+
+    function doEnter() {
+        var a = document.getElementById("area")
+        a.innerText = "Hi! Nice to have you around. Can you please click me?"
+    }
+
+    function doExit() {
+        var a = document.getElementById("area")
+        a.innerText = "Oh, no! Please come back to me!..."
+    }
+
+        
+
+
+    </script>
+</body>
+</html>
