@@ -1,0 +1,156 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #222222;
+    padding: 30px;
+}
+
+.btn {
+    width: 92px;
+    height: 60px;
+    margin: 6px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 18pt;
+    border-radius: 8px;
+}
+
+.btn::-moz-focus-inner {
+    border: 0;
+}
+
+#keyboard {
+    margin-top: 20px;
+}
+
+
+.op {
+    background-color: orange;
+    font-weight: 700;
+}
+
+.op:hover {
+    background-color: orangered;
+}
+
+.op:active {
+    background-color: lightsalmon;
+}
+
+.digit {
+    background-color: gray;
+}
+
+.digit:hover {
+    background-color: dimgray;
+
+}
+
+.digit:active {
+    background-color: #333;
+}
+
+
+
+.btnclear {
+    background-color: red;
+    font-weight: 700;
+}
+
+.btnclear:hover {
+    background-color: darkred;
+}
+
+.btnclear:active {
+    background-color: lightcoral;
+}
+
+
+
+#outbox {
+    border-radius: 8px 8px 0 0 ;
+    box-shadow: 2px 2px 10px rgb(100, 98, 71) inset;
+    text-shadow: 1px 1px 2px rgb(124, 122, 96);
+    margin-left: 2px;
+    margin-right: 2px;
+    padding: 1px 4px;
+    height: 56pt;
+    width: 400px;
+    text-align: right;
+    font-size: 26pt;
+    font-weight: 700;
+    font-family: 'Courier New', Courier, monospace;
+    color: #555555aa;
+    background-color: palegoldenrod;
+}
+
+#xbox {
+    border-radius: 0 0  8px 8px;
+    box-shadow: 1px 1px 10px rgb(100, 98, 71) inset;
+    text-shadow: 1px 1px 1px rgb(120, 108, 91);
+    margin-left: 2px;
+    margin-right: 2px;
+    padding: 1px 4px;
+    text-align: right;
+    width: 400px;
+    font-size: 10pt;
+    font-weight: 700;
+    font-family: 'Courier New', Courier, monospace;
+    color: #777777aa;
+    background-color: palegoldenrod;
+}
+
+.brand {
+    width: 200px;
+    margin-left: 2px;
+    color: rgb(214, 210, 196);
+    float: left;
+}
+
+.brand-div {
+    width: 400px;
+}
+
+.solar-panel {
+    border: 2px solid gray;
+    border-radius: 8px 8px 0 0 ;
+    float: right;
+    width: 160px;
+    margin-top: 30px;
+    margin-right: 5px;
+    border-radius: 8px 8px 8px 8px;
+    background-color: rgb(46, 25, 6);
+}
+
+.solar-cell:last-child {
+    border-radius: 6px 0 0 6px;
+}
+
+.solar-cell:first-child {
+    border-radius: 0 6px 6px 0;
+}
+
+.solar-cell {
+    float: right;
+    width: 40px;
+    height: 25px;
+    box-shadow: 1px 1px 10px rgb(92, 74, 64) inset;
+}
+
+.machine-case {
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5),
+                0px 2px 2px 0px rgba(255, 255, 255, 0.5) inset;
+    border-radius: 8px;
+    padding: 5px;
+    border: px solid #AAA;
+    width: 418px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #4d4b45;
+}
+
+footer p {
+    margin-top: 50px;
+    font-size: 10pt;
+    color: #BBBBBB;
+    text-align: center;
+}
