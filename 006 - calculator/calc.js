@@ -82,7 +82,9 @@ function calc() {
     else {
         let clean_expression = expr.replace(/x/g, "*")
         clean_expression = clean_expression.replace(/\^/g, "**")
-        out.value = Number(eval(clean_expression)).toPrecision(15);
+        let n = Number(eval(clean_expression)).toPrecision(15).toString();
+
+        out.value = parseFloat(n)
     }
 }
 
