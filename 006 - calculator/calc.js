@@ -82,7 +82,7 @@ function calc() {
     else {
         let clean_expression = expr.replace(/x/g, "*")
         clean_expression = clean_expression.replace(/\^/g, "**")
-        out.value = eval(clean_expression);
+        out.value = Number(eval(clean_expression)).toPrecision(15);
     }
 }
 
