@@ -1,7 +1,9 @@
 
 
 window.onload = function() {
-    kb = document.getElementById("keyboard")
+    let kb = document.getElementById("keyboard")
+    let txt = document.getElementById("xbox")
+
     var chars = ['1', '2', '3', '/', 
                  '4', '5', '6', 'x',
                  '7', '8', '9', '-',
@@ -22,7 +24,7 @@ window.onload = function() {
             class2 = "digit"
         }
         
-        if(chars[i] == 'AC'                                                                                                                                                                                                                                                                                                                                                                                                                                     || chars[i] == '&larr;') {
+        if(chars[i] == 'AC' || chars[i] == '&larr;') {
             class2 = "btnclear"
         }
         
@@ -30,6 +32,11 @@ window.onload = function() {
         kb.innerHTML += `<input class="btn ${class2}" type="submit" id="button_${i}" onClick="addDigit('${chars[i]}')" value="${chars[i]}">${postfix}`;
     }
 
+    txt.focus();
+    window.document.getElementsByTagName("body")[0].addEventListener("click", () => { txt.focus()})
+    window.document.getElementsByTagName("body")[0].addEventListener("keydown", () => { txt.focus()})
+    txt.addEventListener("input", calc )
+    //txt.addEventListener("blur", () => { txt.focus() }) //does not work. why?
 }
 
 
